@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Website</title>
+	<style>
+		body {
+			background-image: url('background-image.jpg');
+			background-size: cover;
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+
+		header {
+			background-color: #333;
+			color: #fff;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 10px 20px;
+		}
+
+		nav ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			display: flex;
+		}
+
+		nav li {
+			margin: 0 10px;
+		}
+
+		nav a {
+			color: #fff;
+			text-decoration: none;
+			font-weight: bold;
+			font-size: 18px;
+		}
+
+		nav a:hover {
+			text-decoration: underline;
+		}
+
+		.search-box {
+			display: flex;
+			align-items: center;
+			margin: 10px 20px;
+		}
+
+		.search-box input[type="text"] {
+			padding: 5px;
+			border-radius: 5px;
+			border: none;
+			margin-right: 10px;
+			width: 200px;
+		}
+
+		.search-box button {
+			background-color: #fff;
+			color: #333;
+			border: none;
+			padding: 5px 10px;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+
+		h1 {
+			font-size: 36px;
+			margin: 50px 20px;
+			text-align: center;
+		}
+
+		p {
+			font-size: 16px;
+			line-height: 1.5;
+			margin: 20px;
+			text-align: justify;
+		}
+
+		span {
+			font-weight: bold;
+			color: #333;
+		}
+
+		.btn {
+			background-color: #333;
+			color: #fff;
+			padding: 10px 20px;
+			border-radius: 5px;
+			border: none;
+			cursor: pointer;
+			margin: 20px;
+			display: block;
+			width: 150px;
+			margin: 0 auto;
+			text-align: center;
+		}
+
+		form {
+			margin: 20px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		form label {
+			font-size: 18px;
+			font-weight: bold;
+			margin-bottom: 10px;
+		}
+
+		form input[type="text"], form input[type="email"], form textarea {
+			width: 100%;
+			margin-bottom: 20px;
+			padding: 5px;
+			border-radius: 5px;
+			border: none;
+			font-size: 16px;
+			resize: vertical;
+		}
+
+		form textarea {
+			height: 150px;
+		}
+
+		.social-icons {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin: 20px;
+		}
+
+		.social-icons a {
+			margin: 0 10px;
+		}
+
+		.social-icons img {
+			width: 30px;
+			height: 30px;
+			cursor: pointer;
+		}
+
+		footer {
+			background-color: #333;
+			color: #fff;
+			padding: 10px 20px;
+			display: flex;
+		}
+		footer p {
+		margin: 0;
+		flex-grow: 1;
+	}
+
+	.footer-links {
+		display: flex;
+		align-items: center;
+	}
+
+	.footer-links a {
+		color: #fff;
+		margin: 0 10px;
+		text-decoration: none;
+		font-size: 14px;
+		font-weight: bold;
+	}
+
+	.footer-links a:hover {
+		text-decoration: underline;
+	}
+
+</style>
+</head>
+<body>
+	<header>
+		<img src="logo.png" alt="My Website">
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Service</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+		<div class="search-box">
+			<input type="text" placeholder="Search...">
+			<button><img src="search-icon.png" alt="Search"></button>
+		</div>
+	</header>
+	<h1>Welcome to My Website</h1>
+
+<p><span>Lorem ipsum</span> dolor sit amet, consectetur adipiscing elit. Sed lacinia neque vel lobortis bibendum. Integer lobortis augue id leo congue, eget posuere neque interdum. Quisque id sapien urna. Praesent lacinia enim augue, at suscipit est convallis eu. Aliquam erat volutpat. Morbi bibendum convallis tellus, eget rutrum augue commodo at. Donec varius dolor non libero vehicula interdum. Duis aliquet, lectus ut vestibulum pretium, ex metus faucibus ante, in imperdiet turpis lacus sed purus. Nulla malesuada mauris nec metus sollicitudin euismod. Vivamus condimentum magna a velit vestibulum, non malesuada urna bibendum.</p>
+
+<p><span>Phasellus</span> venenatis, arcu a blandit commodo, ex mi interdum urna, nec aliquam lorem magna id justo. Aenean auctor ultricies enim, vel scelerisque urna interdum eu. Donec dignissim nibh vel mi ullamcorper, at vestibulum nulla commodo. Nulla facilisi. Cras hendrerit eros in justo malesuada, eu bibendum lacus cursus. Praesent ac justo quis velit mollis lobortis. Proin finibus diam in aliquet malesuada. Pellentesque vel quam euismod, auctor tellus a, hendrerit tellus. Nam eget felis non odio hendrerit venenatis. Curabitur auctor mi id ligula hendrerit, ut imperdiet libero molestie. Praesent vitae ex est. Morbi dapibus sapien vel nibh faucibus, eu gravida neque bibendum. Fusce efficitur justo id odio dignissim vehicula. Suspendisse eget ullamcorper elit.</p>
+
+<button class="btn">Learn More</button>
+
+<form>
+	<label for="name">Name:</label>
+	<input type="text" id="name" name="name" placeholder="Enter your name">
+
+	<label for="email">Email:</label>
+	<input type="email" id="email" name="email" placeholder="Enter your email address">
+
+	<label for="message">Message:</label>
+	<textarea id="message" name="message" placeholder="Enter your message"></textarea>
+	<button type="submit" class="btn">Submit</button>
+</form>
+
+<div class="social-media">
+	<a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+	<a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+	<a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+	<a href="#"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+</div>
+
+<footer>
+	<div class="footer-links">
+		<p>My Website &copy; 2023</p>
+		<a href="#">Privacy Policy</a>
+		<a href="#">Terms of Service</a>
+		<a href="#">Contact Us</a>
+	</div>
+</footer>
+</body>
+</html>
